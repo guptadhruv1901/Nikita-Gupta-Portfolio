@@ -1,0 +1,237 @@
+.main {
+    padding: 10px;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #0f0f0f;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.main img {
+    height: 48vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.wrapper {
+    height: 600px;
+    width: 600px;
+    background: linear-gradient(to right, rgb(170, 0, 255) 30%, transparent);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    left: -50px;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0f0f0f, transparent);
+}
+
+.col, .col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.col {
+    justify-items: center;
+}
+
+.col1 {
+    justify-content: space-between;
+}
+
+.image {
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+svg {
+    position: relative;
+    z-index: 3;
+    margin-left: 10px;
+}
+
+svg path {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-dasharray: 275;
+    stroke-dashoffset: 275;
+    animation: textAnimation 4s 6s ease-in-out 1 forwards;
+}
+
+.content .typer {
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.mask {
+    position: absolute;
+}
+
+.content h1 {
+    margin-bottom: 70px;
+    opacity: 0;
+    color: #fff;
+    font-size: 80px;
+    animation: typerFade 4s 6s ease-in-out 1 forwards;
+    position: relative;
+    z-index: 3;
+}
+
+.content .typer h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.content h1 span {
+    color: #fff724;
+}
+
+.content h1 span span {
+    color: #fff;
+}
+
+@keyframes typerFade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes textAnimation {
+    0% { stroke-dashoffset: 275; }
+    80% { fill: transparent; }
+    100% {
+        fill: #fff;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fade {
+    0% { transform: scale(1); }
+    33% {
+        transform: scale(1.02);
+        box-shadow: 0px 0px 10px 1px rgb(170, 0, 255);
+    }
+    66% { transform: scale(1); }
+    100% {
+        transform: scale(1.02);
+        box-shadow: 0px 0px 10px 1px #fff724;
+    }
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+@media (max-width: 1200px) {
+    .main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .main .col:nth-of-type(5),
+    .main .col1:nth-of-type(4) {
+        display: none !important;
+    }
+
+    .content h1 {
+        font-size: 60px;
+    }
+
+    .content .typer h1 {
+        font-size: 40px;
+    }
+
+    .wrapper {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .main .col:nth-of-type(5),
+    .main .col1:nth-of-type(4)
+    {
+        display: none !important;
+    }
+    .content h1 {
+        font-size: 45px;
+    }
+
+    .content .typer h1 {
+        font-size: 30px;
+    }
+
+    .wrapper {
+        height: 300px;
+        width: 300px;
+        left: -20px;
+    }
+
+    .main img {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .main .col:nth-of-type(5),
+    .main .col1:nth-of-type(4)
+    {
+        display: none !important;
+    }
+    .content h1 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    .content .typer h1 {
+        font-size: 22px;
+    }
+
+    .wrapper {
+        height: 200px;
+        width: 200px;
+        left: -10px;
+    }
+
+    .main img {
+        height: 30vh;
+    }
+}

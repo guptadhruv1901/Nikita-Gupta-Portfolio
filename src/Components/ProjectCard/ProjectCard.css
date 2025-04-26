@@ -1,0 +1,124 @@
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+}
+
+.card-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.card-color {
+    background-color: #7200abef;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card-data {
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 11rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    transition: opacity 0.5s 0.5s;
+    background: none; /* If you want transparency over the image */
+    text-align: center;
+}
+
+.card-description {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: #cf70ff;
+    font-weight: 600;
+}
+
+.card-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e3aaff;
+    margin-bottom: 0.25rem;
+}
+
+.card-button {
+    font-size: 1rem;
+    color: #ffd000;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    text-decoration: underline;
+}
+
+.project-card:hover .card-data {
+    animation: show-data 0.5s forwards;
+}
+
+.project-card:hover .card-color {
+    opacity: 1;
+}
+
+.project-card:hover .card-img {
+    transform: scale(1.1);
+}
+
+.project-card:not(:hover) .card-data {
+    animation: remove-data 0.5s forwards;
+}
+
+@keyframes show-data {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes remove-data {
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* Responsive text tweaks for smaller screens */
+@media (max-width: 500px) {
+    .card-name {
+        font-size: 1.4rem;
+    }
+
+    .card-description {
+        font-size: 0.95rem;
+    }
+
+    .card-button {
+        font-size: 0.9rem;
+    }
+
+    .card-data {
+        bottom: 6rem;
+    }
+}

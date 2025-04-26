@@ -1,0 +1,213 @@
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: white;
+  padding: 0 100px;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  padding: 0 60px;
+  padding-top: 150px;
+}
+
+.left-section h2 {
+  font-size: 38px;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.left-section p {
+  font-size: 14.5px;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.col-gap {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info h4 {
+  font-size: 15px;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.contact-info a {
+  font-weight: 600;
+}
+
+.contact-info {
+  margin-top: 35px;
+}
+
+.contact-info div {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.contact-info img {
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+}
+
+.connect-message {
+  margin-top: 25px;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+.social img {
+  width: 25px;
+  height: 25px;
+  margin-right: 40px;
+  opacity: 0.5;
+  margin-bottom: 5rem;
+}
+
+.right-section {
+  background-color: #fff;
+}
+
+.right-section h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: #555;
+}
+
+.row-gap {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.row-gap input {
+  width: 100%;
+  padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 30px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 60%;
+  padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid #000000;
+  resize: none;
+  font-size: 15px;
+  outline: none;
+}
+
+.right-section button {
+  background-color: transparent;
+  color: black;
+  padding: 12px 20px;
+  border: 3px solid #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.right-section button:hover {
+  background-color: #000000;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+@media (max-width: 1024px) {
+  .contact-card {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 80px 40px 40px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-section h2,
+  .right-section h2 {
+    font-size: 30px;
+  }
+
+  .social img {
+    margin-right: 20px;
+  }
+
+  .contact-info img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  .right-section button {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 0 20px;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 60px 20px 30px;
+  }
+
+  .row-gap {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-section h2,
+  .right-section h2 {
+    font-size: 26px;
+  }
+
+  .connect-message {
+    font-size: 14px;
+  }
+
+  .social img {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+  }
+}

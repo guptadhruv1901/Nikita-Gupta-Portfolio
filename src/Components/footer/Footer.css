@@ -1,0 +1,82 @@
+/* Footer.css */
+footer {
+    background: transparent;
+    color: #fff;
+    padding: 50px 0 30px;
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.481);
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Wraps content on smaller screens */
+    gap: 2rem;
+    text-align: center;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    min-width: 250px; /* Ensures columns don't shrink too much */
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    word-spacing: 0.8px;
+    color: #ffffffb0;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 40px 0 20px;
+    }
+
+    h1 {
+        font-size: 1.1em;
+    }
+
+    .copyright {
+        font-size: 15px;
+        padding-top: 30px;
+    }
+}

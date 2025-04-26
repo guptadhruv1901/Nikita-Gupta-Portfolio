@@ -1,0 +1,75 @@
+/* Navbar container */
+.header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 50px 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.4s ease-in-out;
+}
+
+/* Dynamic Navbar Colors - Define classes for different pages */
+.nav-default { background: linear-gradient(rgb(0, 0, 0) 60%, transparent 100%);  color: white;}
+.nav-home { background: linear-gradient(rgb(0, 0, 0) 60%, transparent 100%);  color: white;}
+.nav-about { background: linear-gradient(rgb(221, 221, 221) 60%, transparent 100%); color: black; }
+.nav-projects { background: linear-gradient(rgb(0, 0, 0) 60%, transparent 100%);  color: white;}
+.nav-events { background: linear-gradient(rgb(0, 0, 0) 60%, transparent 100%);  color: white;}
+.nav-contact { background: linear-gradient(rgb(221, 221, 221) 60%, transparent 100%); color: black; }
+
+/* Navbar Links */
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    margin-left: 40px;
+    transition: color 0.3s ease-in-out;
+    padding-bottom: 5px;
+}
+
+/* Underline effect for active and hover states */
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    background: #fff724;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-about .navbar a::before, .nav-contact .navbar a::before{
+    background: rgb(170, 0, 255);
+}
+
+.navbar .active {
+    color: #fff724;
+}
+.nav-about .navbar .active, .nav-contact .navbar .active{
+    color: rgb(170, 0, 255);
+}
+
+.navbar a:hover {
+    color: #fff724;
+}
+.nav-about a:hover, .nav-contact a:hover {
+    color: rgb(170, 0, 255);
+}
+
+.navbar .active::before {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+    .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}

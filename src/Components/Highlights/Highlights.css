@@ -1,0 +1,99 @@
+.hl-container {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+}
+
+.hl-container h1 {
+    padding-left: 5vw;
+    color: white;
+    font-size: clamp(2.5rem, 7vw, 90px); /* Responsive heading size */
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+.logos{
+    padding: 10px 0;
+    position: relative;
+    
+}
+.logos-slide{
+    width: 90%;
+    max-width: 1536px;
+    height: 100px;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: hidden;
+    margin-inline: auto;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1)20%,
+        rgba(0,0,0,1)80%,
+        rgba(0,0,0,0)
+    );
+    margin-top: 30px;
+}
+.logos-slide:hover img{
+    animation-play-state: paused;
+}
+.logos-slide img{
+    height: 100px;
+    width: 180px;
+    cursor: pointer;
+    position: absolute;
+    left: max(calc(220px*10),100%);
+    animation-name: slide;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.alt img{
+    left:-220px;
+    animation-name: slide-alt;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.item1{
+    animation-delay: calc(60s / 10 * (10 - 1) * -1) ;
+}
+.item2{
+    animation-delay: calc(60s / 10 * (10 - 2) * -1) ;
+}
+.item3{
+    animation-delay: calc(60s / 10 * (10 - 3) * -1) ;
+}
+.item4{
+    animation-delay: calc(60s / 10 * (10 - 4) * -1) ;
+}
+.item5{
+    animation-delay: calc(60s / 10 * (10 - 5) * -1) ;
+}
+.item6{
+    animation-delay: calc(60s / 10 * (10 - 6) * -1);
+}
+.item7{
+    animation-delay: calc(60s / 10 * (10 - 7) * -1);
+}
+.item8{
+    animation-delay: calc(60s / 10 * (10 - 8) * -1);
+}
+.item9{
+    animation-delay: calc(60s / 10 * (10 - 9) * -1);
+}
+.item10{
+    animation-delay: calc(60s / 10 * (10 - 10) * -1);
+}
+@keyframes slide {
+    to{
+        left: -220px;
+    }
+    
+}
+@keyframes slide-alt {
+    100%{
+        left: max(calc(220px*10),100%);
+    }
+    
+}
