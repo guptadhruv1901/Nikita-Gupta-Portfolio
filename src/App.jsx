@@ -12,7 +12,7 @@ import Events from './Pages/Events/Events'
 import About from './Pages/About/About'
 import ScrollToTop from './Components/ScrollToTop'
 import Contact from './Pages/Contact/Contact'
-import Footer from './Components/footer/footer'
+import Footer from './Components/footer/Footer'
 
 const App = () => {
   return (
