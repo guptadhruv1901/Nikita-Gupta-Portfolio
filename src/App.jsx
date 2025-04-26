@@ -2,17 +2,13 @@ import React, { useState } from 'react'
 import Starter from './Components/Starter/Starter'
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom"
 import Navbar from './Components/Navbar/Navbar'
-import Brief from './Components/Brief/Brief'
-import Highlights from './Components/Highlights/Highlights'
-import ExploreProjects from './Components/ExploreProjects/ExploreProjects'
-import ProjectDisplay from './Components/ProjectDisplay/ProjectDisplay'
 import Project from './Pages/Project/Project'
 import Home from './Pages/Home/Home'
 import Events from './Pages/Events/Events'
 import About from './Pages/About/About'
 import ScrollToTop from './Components/ScrollToTop'
 import Contact from './Pages/Contact/Contact'
-import Footer from './Components/footer/Footer'
+import Footer from './Components/footer/footer'
 
 const App = () => {
   return (
