@@ -837,6 +837,38 @@ export const event_list=[
 export const project_list=[
     {
         _id: 1,
+        name: "Panasonic",
+        coverImage: Panasonic,
+        description: "Branding, Logo, and Stationery Design for a Hypothetical Digital Marketing Agency.",
+        category: "Branding",
+        output: "Branding, Logo, and Stationery Design for a Hypothetical Digital Marketing Agency.",
+        mainImg: Panasonic1,
+        projectFormat: [{image:Panasonic2},{image:Panasonic3},{image:Panasonic4},{image:Panasonic5},{image:Panasonic6}]
+    },
+    {
+        _id: 2,
+        name: "Lufthasna",
+        coverImage: Lufthansa,
+        output: "Influencer Pitch Deck",
+        description: "An influencer-integrated pitch deck showcasing brand promotions by sending creators to different countries on Lufthansa flights. The design process included crafting itineraries, visually representing Lufthansa's services, and highlighting seamless travel experiences.",
+        mainImg: Lufthansa1,
+        Duration: "2 weeks",
+        category: "Brand Pitch Deck",
+        projectFormat: [{image:Lufthansa2},{image:Lufthansa3},{image:Lufthansa4},{image:Lufthansa5},{image:Lufthansa6},{image:Lufthansa7},{image:Lufthansa8},{image:Lufthansa9},{image:Lufthansa10},{image:Lufthansa11},{image:Lufthansa12},{image:Lufthansa13},{image:Lufthansa14},{image:Lufthansa15},{image:Lufthansa16}]
+    },
+    {
+        _id: 3,
+        name: "Hippo Stores",
+        coverImage: Hippo,
+        output: "Influencer Pitch Deck",
+        description: "An influencer pitch deck for Hippo Stores focused on showcasing newly launched offline stores. The process included creating relatable influencer scenarios, designing branded layouts, and incorporating bold color schemes to emphasize brand vibrancy.",
+        mainImg: Hippo1,
+        Duration: "2 weeks",
+        category:"Brand Pitch Deck",
+        projectFormat: [{image: Hippo2},{image: Hippo3},{image: Hippo4},{image: Hippo5},{image: Hippo6},{image: Hippo7},{image: Hippo8},{image: Hippo9},{image: Hippo10},{image: Hippo11},{image: Hippo12},{image: Hippo13},{image: Hippo14},{image: Hippo15},{image: Hippo16}]
+    },
+    {
+        _id: 4,
         name: "Avantra by Trends",
         coverImage: Avantra,
         output: "Influencer Pitch Deck",
@@ -848,18 +880,25 @@ export const project_list=[
         
     },
     {
-        _id: 2,
-        name: "Blinkers",
-        coverImage: Blinkers,
-        output: "Branding, Logo, Posters, and Stationery Design for a Hypothetical Sunglasses Brand.",
-        description: "Blinkers' Holiday Vacation Collection was designed to highlight minimalism with a modern touch. Posters reflect various vacation destinations—mountains, beaches, and high-tech cities—to communicate the versatility of the collection. The logo uses sharp, clean lines to represent sophistication, while the stationery echoes the brand's travel-inspired ethos. The process involved deep research into vacation aesthetics and integrating them into the branding elements.",
-        mainImg:PF1,
-        category: "Branding",
-        Duration: "2 Weeks",
-        projectFormat: [{image: idea_blinkers},{image: PF2},{image: PF3},{image: PF4},{image: PF5},{image: PF6},{image: PF7}]
+        _id: 5,
+        name: "Spotify",
+        coverImage: Spotify,
+        output: "Influencer Pitch Deck",
+        description: 'Spotify`s In "India for Podcasters" pitch deck highlighted their multilingual podcasting feature. A creator report was designed to showcase podcasting metrics across platforms. The process involved analyzing real data, creating visually engaging infographics, and tailoring the pitch for Indian creators.',
+        mainImg: Spotify1,
+        Duration: "2 weeks",
+        category: "Brand Pitch Deck",
+        projectFormat: [{image:Spotify2},{image:Spotify3},{image:Spotify4},{image:Spotify5},{image:Spotify6},{image:Spotify7},{image:Spotify8},{image:Spotify9},{image:Spotify10},{image:Spotify11},{image:Spotify12},{image:Spotify13},{image:Spotify14},{image:Spotify15},{image:Spotify16}]
     },
     {
-        _id: 3,
+        _id: 6,
+        name: "DM Pay",
+        coverImage: DMPay,
+        description: "",
+        category: "Branding"
+    },
+    {
+        _id: 7,
         name: "Creator United 2.0",
         coverImage: CreatorUnited,
         output: "Influencer Pitch Deck",
@@ -870,18 +909,29 @@ export const project_list=[
         projectFormat: [{image: CreatorUnited2},{image: CreatorUnited3},{image: CreatorUnited4},{image: CreatorUnited5},{image: CreatorUnited6},{image: CreatorUnited7},{image: CreatorUnited8},{image: CreatorUnited9},{image: CreatorUnited10},{image: CreatorUnited11},{image: CreatorUnited12},{image: CreatorUnited13},{image: CreatorUnited14},{image: CreatorUnited15},{image: CreatorUnited16},{image: CreatorUnited17}]
     },
     {
-        _id: 4,
-        name: "Digital Painting",
-        coverImage: DigitalPainting,
-        output: "Digital Artwork",
-        description: "Explored a variety of themes and styles through digital painting, ranging from hyper-realistic portraits to imaginative abstract compositions. Each piece is created with attention to detail, using advanced digital tools and techniques to bring visions to life. The process includes concept sketching, layering, and fine detailing to achieve a polished final result." ,
-        mainImg: PF47,
-        Duration: "3 days Per Painting",
-        category: "Others",
-        projectFormat: [{image: PF45},{image: PF46},{image: PF48},{image: PF49}]
+        _id: 8,
+        name: "Swiped Right Designs",
+        coverImage: SwipedRight,
+        output: "Branding, Logo, and Stationery Design for a Hypothetical Digital Marketing Agency.",
+        description: "For Swiped Right Designs, the goal was to craft a youthful and engaging brand identity that resonates with the digital-first audience. The logo encapsulates the essence of swiping motion, symbolizing modernity and quick decisions. Stationery design incorporates bold colors and sleek typography to create a cohesive and professional look. The process involved brainstorming relevant digital elements, creating multiple logo iterations, and refining the designs for a seamless visual appeal.",
+        mainImg: PF12,
+        Duration: "2 weeks",
+        category: "Branding",
+        projectFormat: [{image:idea_swipe},{image:PF13},{image:PF14},{image:PF15},{image:PF16},{image:PF17}]
     },
     {
-        _id: 5,
+        _id: 9,
+        name: "Blinkers",
+        coverImage: Blinkers,
+        output: "Branding, Logo, Posters, and Stationery Design for a Hypothetical Sunglasses Brand.",
+        description: "Blinkers' Holiday Vacation Collection was designed to highlight minimalism with a modern touch. Posters reflect various vacation destinations—mountains, beaches, and high-tech cities—to communicate the versatility of the collection. The logo uses sharp, clean lines to represent sophistication, while the stationery echoes the brand's travel-inspired ethos. The process involved deep research into vacation aesthetics and integrating them into the branding elements.",
+        mainImg:PF1,
+        category: "Branding",
+        Duration: "2 Weeks",
+        projectFormat: [{image: idea_blinkers},{image: PF2},{image: PF3},{image: PF4},{image: PF5},{image: PF6},{image: PF7}]
+    },
+    {
+        _id: 10,
         name: "Groove & Grills",
         coverImage: GrooveGrill,
         output: "Branding, Logo, Posters, and Stationery Design for a Hypothetical Live Music Restaurant.",
@@ -892,29 +942,7 @@ export const project_list=[
         projectFormat: [{image:idea_groove},{image: PF9},{image: PF10},{image: PF11}]
     },
     {
-        _id: 6,
-        name: "Handmade Painting",
-        coverImage: HMPainting,
-        output: "Traditional Artwork",
-        description: "Created traditional artworks using mediums like watercolors, acrylics, and oils. These paintings reflect a blend of personal inspiration and cultural motifs, capturing emotions and narratives through brushwork and color play. The process involves choosing the right medium, preparing the canvas, and experimenting with textures and strokes to add depth and dimension.",
-        mainImg: PF62,
-        Duration: "1 week per painting",
-        category:"Others",
-        projectFormat: [{image: PF58},{image: PF59},{image: PF60},{image: PF61}]
-    },
-    {
-        _id: 7,
-        name: "Hippo Stores",
-        coverImage: Hippo,
-        output: "Influencer Pitch Deck",
-        description: "An influencer pitch deck for Hippo Stores focused on showcasing newly launched offline stores. The process included creating relatable influencer scenarios, designing branded layouts, and incorporating bold color schemes to emphasize brand vibrancy.",
-        mainImg: Hippo1,
-        Duration: "2 weeks",
-        category:"Brand Pitch Deck",
-        projectFormat: [{image: Hippo2},{image: Hippo3},{image: Hippo4},{image: Hippo5},{image: Hippo6},{image: Hippo7},{image: Hippo8},{image: Hippo9},{image: Hippo10},{image: Hippo11},{image: Hippo12},{image: Hippo13},{image: Hippo14},{image: Hippo15},{image: Hippo16}]
-    },
-    {
-        _id: 8,
+        _id: 11,
         name: "Indian Premier League",
         coverImage: IPL,
         output: "Marketing Campaign",
@@ -925,7 +953,7 @@ export const project_list=[
         projectFormat: [{image:PF23},{image:PF24},{image:PF25},{image:PF27},{image:PF28},{image:PF29}]
     },
     {
-        _id: 9,
+        _id: 12,
         name: "Juzt Jelly",
         coverImage: JuztJelly,
         output: "Marketing Campaign",
@@ -936,18 +964,7 @@ export const project_list=[
         projectFormat: [{image:PF31}]
     },
     {
-        _id: 10,
-        name: "Lufthasna",
-        coverImage: Lufthansa,
-        output: "Influencer Pitch Deck",
-        description: "An influencer-integrated pitch deck showcasing brand promotions by sending creators to different countries on Lufthansa flights. The design process included crafting itineraries, visually representing Lufthansa's services, and highlighting seamless travel experiences.",
-        mainImg: Lufthansa1,
-        Duration: "2 weeks",
-        category: "Brand Pitch Deck",
-        projectFormat: [{image:Lufthansa2},{image:Lufthansa3},{image:Lufthansa4},{image:Lufthansa5},{image:Lufthansa6},{image:Lufthansa7},{image:Lufthansa8},{image:Lufthansa9},{image:Lufthansa10},{image:Lufthansa11},{image:Lufthansa12},{image:Lufthansa13},{image:Lufthansa14},{image:Lufthansa15},{image:Lufthansa16}]
-    },
-    {
-        _id: 11,
+        _id: 13,
         name: "MamaEarth",
         coverImage: MamaEarth,
         output: "Marketing Campaign",
@@ -958,7 +975,55 @@ export const project_list=[
         projectFormat: [{image:PF33},{image:PF34},{image:PF35},{image:PF36},{image:PF37}]        
     },
     {
-        _id: 12,
+        _id: 14,
+        name: "Apollo 24/7",
+        coverImage: Icon,
+        output: "UI Icon Design",
+        description: "Designed a set of UI icons for Apollo 24/7, covering standard icons, disease icons, and splash screens. Humor and relatability were added to the icons to enhance user engagement. The process included ideation, sketching, and iterative refinements.",
+        mainImg: PF66,
+        Duration: "1 week per icon",
+        category: "Others",
+        projectFormat: [{image:PF63},{image:PF64},{image:PF65}]
+    },
+    {
+        _id: 15,
+        name: "Villa Alternate",
+        coverImage: VillaAlternate,
+        output: "Branding, Social Media, Web Icons, and Stationery Design for an Architecture Design and Construction Consultancy.",
+        description: "Villa Alternate's branding reflects a premium and sophisticated identity. The logo and web icons emphasize simplicity and elegance, while the social media and stationery designs maintain a professional and high-end appearance. The process involved meticulous typography selection, clean layouts, and a monochrome palette to resonate with luxury architecture services.",
+        mainImg: PF18,
+        Duration: "2 weeks",
+        category: "Branding",
+        projectFormat: [{image:idea_villa},{image:PF19},{image:PF20},{image:PF21},{image:PF22}]
+    },
+    {
+        _id: 16,
+        name: "Digital Painting",
+        coverImage: DigitalPainting,
+        output: "Digital Artwork",
+        description: "Explored a variety of themes and styles through digital painting, ranging from hyper-realistic portraits to imaginative abstract compositions. Each piece is created with attention to detail, using advanced digital tools and techniques to bring visions to life. The process includes concept sketching, layering, and fine detailing to achieve a polished final result." ,
+        mainImg: PF47,
+        Duration: "3 days Per Painting",
+        category: "Others",
+        projectFormat: [{image: PF45},{image: PF46},{image: PF48},{image: PF49}]
+    },
+    
+    {
+        _id: 17,
+        name: "Handmade Painting",
+        coverImage: HMPainting,
+        output: "Traditional Artwork",
+        description: "Created traditional artworks using mediums like watercolors, acrylics, and oils. These paintings reflect a blend of personal inspiration and cultural motifs, capturing emotions and narratives through brushwork and color play. The process involves choosing the right medium, preparing the canvas, and experimenting with textures and strokes to add depth and dimension.",
+        mainImg: PF62,
+        Duration: "1 week per painting",
+        category:"Others",
+        projectFormat: [{image: PF58},{image: PF59},{image: PF60},{image: PF61}]
+    },
+    
+    
+    
+    {
+        _id: 18,
         name: "Normalise",
         coverImage: Normalise,
         output: "Marketing Campaign",
@@ -969,7 +1034,7 @@ export const project_list=[
         projectFormat: [{image:PF38},{image:PF39},{image:PF40},{image:PF42},{image:PF43},{image:PF44}]
     },
     {
-        _id: 13,
+        _id: 19,
         name: "Logo Design",
         coverImage: Logo,
         output: "Logo Design",
@@ -981,7 +1046,7 @@ export const project_list=[
 
     },
     {
-        _id: 14,
+        _id: 20,
         name: "Social Media",
         coverImage: SocialMedia,
         output: "Social Media Content Creation",
@@ -993,51 +1058,7 @@ export const project_list=[
 
     },
     {
-        _id: 15,
-        name: "Spotify",
-        coverImage: Spotify,
-        output: "Influencer Pitch Deck",
-        description: 'Spotify`s In "India for Podcasters" pitch deck highlighted their multilingual podcasting feature. A creator report was designed to showcase podcasting metrics across platforms. The process involved analyzing real data, creating visually engaging infographics, and tailoring the pitch for Indian creators.',
-        mainImg: Spotify1,
-        Duration: "2 weeks",
-        category: "Brand Pitch Deck",
-        projectFormat: [{image:Spotify2},{image:Spotify3},{image:Spotify4},{image:Spotify5},{image:Spotify6},{image:Spotify7},{image:Spotify8},{image:Spotify9},{image:Spotify10},{image:Spotify11},{image:Spotify12},{image:Spotify13},{image:Spotify14},{image:Spotify15},{image:Spotify16}]
-    },
-    {
-        _id: 16,
-        name: "Swiped Right Designs",
-        coverImage: SwipedRight,
-        output: "Branding, Logo, and Stationery Design for a Hypothetical Digital Marketing Agency.",
-        description: "For Swiped Right Designs, the goal was to craft a youthful and engaging brand identity that resonates with the digital-first audience. The logo encapsulates the essence of swiping motion, symbolizing modernity and quick decisions. Stationery design incorporates bold colors and sleek typography to create a cohesive and professional look. The process involved brainstorming relevant digital elements, creating multiple logo iterations, and refining the designs for a seamless visual appeal.",
-        mainImg: PF12,
-        Duration: "2 weeks",
-        category: "Branding",
-        projectFormat: [{image:idea_swipe},{image:PF13},{image:PF14},{image:PF15},{image:PF16},{image:PF17}]
-    },
-    {
-        _id: 17,
-        name: "Villa Alternate",
-        coverImage: VillaAlternate,
-        output: "Branding, Social Media, Web Icons, and Stationery Design for an Architecture Design and Construction Consultancy.",
-        description: "Villa Alternate's branding reflects a premium and sophisticated identity. The logo and web icons emphasize simplicity and elegance, while the social media and stationery designs maintain a professional and high-end appearance. The process involved meticulous typography selection, clean layouts, and a monochrome palette to resonate with luxury architecture services.",
-        mainImg: PF18,
-        Duration: "2 weeks",
-        category: "Branding",
-        projectFormat: [{image:idea_villa},{image:PF19},{image:PF20},{image:PF21},{image:PF22}]
-    },
-    {
-        _id: 18,
-        name: "Apollo 24/7",
-        coverImage: Icon,
-        output: "UI Icon Design",
-        description: "Designed a set of UI icons for Apollo 24/7, covering standard icons, disease icons, and splash screens. Humor and relatability were added to the icons to enhance user engagement. The process included ideation, sketching, and iterative refinements.",
-        mainImg: PF66,
-        Duration: "1 week per icon",
-        category: "Others",
-        projectFormat: [{image:PF63},{image:PF64},{image:PF65}]
-    },
-    {
-        _id: 19,
+        _id: 21,
         name: "Brand Integrated AI Images",
         coverImage: AI,
         output: "AI-Generated Brand Images",
@@ -1047,21 +1068,5 @@ export const project_list=[
         category: "Others",
         projectFormat: [{image:AI2},{image:AI3},{image:AI4},{image:AI5},{image:AI6},{image:AI7},{image:AI8},{image:AI9},{image:AI10}]
     },
-    {
-        _id: 20,
-        name: "DM Pay",
-        coverImage: DMPay,
-        description: "",
-        category: "Branding"
-    },
-    {
-        _id: 21,
-        name: "Panasonic",
-        coverImage: Panasonic,
-        description: "Branding, Logo, and Stationery Design for a Hypothetical Digital Marketing Agency.",
-        category: "Branding",
-        output: "Branding, Logo, and Stationery Design for a Hypothetical Digital Marketing Agency.",
-        mainImg: Panasonic1,
-        projectFormat: [{image:Panasonic2},{image:Panasonic3},{image:Panasonic4},{image:Panasonic5},{image:Panasonic6}]
-    }
+    
 ]

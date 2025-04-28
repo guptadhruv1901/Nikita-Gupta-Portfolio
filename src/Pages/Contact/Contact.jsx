@@ -45,7 +45,7 @@ const Contact = () => {
 
         <div className="right-section">
         <h2>Share a quick thought</h2>
-        <form action='https://formspree.io/f/meoekoqd' method='POST'>
+        <form action="https://formsubmit.co/guptadhruv1901@gmail.com" method='POST'>
             <div className="row-gap">
                 <input type="text" id="name" name="name" placeholder='Name*' required />
                 <input type="email" id="email" name="email" placeholder='Email*' required />
